@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Willkommen - Meine Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="intro-overlay">
+        <div class="intro-content">
+            <h1>Willkommen zu meiner Website</h1>
+            <p>Hallo Jonas! 👋</p>
+            <button class="intro-btn" id="intro-btn">Los geht's!</button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Meine Website</div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Startseite</a></li>
+                <li><a href="#about" class="nav-link">Über mich</a></li>
+                <li><a href="#services" class="nav-link">Dienstleistungen</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hallo Jonas!</h1>
+            <p>Dies ist deine neue Website</p>
+            <button class="cta-button">Mehr erfahren</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Über mich</h2>
+            <p>Dies ist ein Beispieltext. Hier kannst du Information über dich selbst oder dein Unternehmen hinzufügen.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Dienstleistungen</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Banane</h3>
+                    <p>Beschreibung deines Service 1</p>
+                </div>
+                <div class="service-card">
+                    <h3>Apfel</h3>
+                    <p>Beschreibung deines Service 2</p>
+                </div>
+                <div class="service-card">
+                    <h3>Birne</h3>
+                    <p>Beschreibung deines Service 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <form class="contact-form" novalidate>
+                <input type="text" placeholder="Dein Name" required minlength="2" maxlength="100">
+                <input type="email" placeholder="Deine E-Mail" required>
+                <textarea placeholder="Deine Nachricht" rows="5" required minlength="5" maxlength="1000"></textarea>
+                <button type="submit" class="submit-btn">Senden</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Meine Website. Alle Rechte vorbehalten.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
